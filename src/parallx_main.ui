@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>788</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>788</width>
+    <height>592</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Custom parallel action </string>
+      </property>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>771</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QPlainTextEdit" name="plainTextEdit">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>14</height>
+           </size>
+          </property>
+          <property name="plainText">
+           <string>Type here your command. Ex.: installing firefox</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="goBtn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Go</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>350</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Quick security options</string>
+      </property>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>341</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QCheckBox" name="testCheck">
+          <property name="text">
+           <string>All event test on local computer before run</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_2">
+          <property name="text">
+           <string>Test ssh connection before run command</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_3">
+          <property name="text">
+           <string>Ask confirm before run command</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_4">
+          <property name="text">
+           <string>Skip the localhost from all commands if listed</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox">
+          <property name="text">
+           <string>Show log window</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="minimumSize">
+       <size>
+        <width>420</width>
+        <height>210</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Lists names of remote computers</string>
+      </property>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>401</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QListView" name="remote_computers_list">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>241</width>
+            <height>155</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="addNewRemote">
+            <property name="minimumSize">
+             <size>
+              <width>130</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Add new</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="editRemotePC">
+            <property name="minimumSize">
+             <size>
+              <width>130</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Edit</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="delRemote">
+            <property name="minimumSize">
+             <size>
+              <width>130</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Delete</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="testSshBtn">
+            <property name="minimumSize">
+             <size>
+              <width>130</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>SSH test</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;ParallX 1.0 on: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="minimumSize">
+       <size>
+        <width>775</width>
+        <height>165</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Favorite Actions on Remote Systems</string>
+      </property>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>681</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QPushButton" name="repoUpdate">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Repos update</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="rebootBtn">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Reboot</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="ownCmd1">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Own Cmd 1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>100</y>
+         <width>681</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QPushButton" name="installUpdate">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Install all update</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="shutDownBtn">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ShutDown</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="ownCmd2">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Own Cmd 2</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>788</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>F&amp;ile</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuSettiings">
+    <property name="title">
+     <string>Settiin&amp;gs</string>
+    </property>
+    <addaction name="actionImport_config_from_save"/>
+    <addaction name="actionEdit_custom_buttons"/>
+    <addaction name="actionImport_SSH_keys"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Abo&amp;ut</string>
+    </property>
+    <addaction name="actionApplication"/>
+    <addaction name="actionMain_project"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSettiings"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save config to file</string>
+   </property>
+  </action>
+  <action name="actionApplication">
+   <property name="text">
+    <string>Application </string>
+   </property>
+  </action>
+  <action name="actionMain_project">
+   <property name="text">
+    <string>Main project</string>
+   </property>
+  </action>
+  <action name="actionImport_config_from_save">
+   <property name="text">
+    <string>Import config from save</string>
+   </property>
+  </action>
+  <action name="actionEdit_custom_buttons">
+   <property name="text">
+    <string>Edit custom buttons</string>
+   </property>
+  </action>
+  <action name="actionImport_SSH_keys">
+   <property name="text">
+    <string>Import SSH keys</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
